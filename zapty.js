@@ -18,3 +18,18 @@ chromeMenu.prototype.createmenu = function() {
 
 };
 
+chromeMenu.prototype.addItem = function() {
+	var id=document.getElementById("menuI");
+	var tr1=document.createElement("tr");
+	tr1.id="menurow";
+	var td1=document.createElement("td");
+	td1.className="menuItems";
+	td1.id="menuItems";
+	var item=document.createTextNode("Item");
+	td1.appendChild(item);
+	tr1.appendChild(td1);
+	id.appendChild(tr1);
+
+
+};
+
