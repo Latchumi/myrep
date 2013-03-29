@@ -1,4 +1,4 @@
-<!--Added newly-->
+<!--Added newly second time-->
 chromeMenu.prototype.createmenu = function() {
 	var menuDiv =document.createElement("div");
 	menuDiv.className="menus";
