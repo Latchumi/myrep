@@ -17,4 +17,15 @@ chromeMenu.prototype.createmenu = function() {
 	
 
 };
+function create1()
+{
+win.createmenu();
+}
 
+function add_item(){
+	win.addItem();
+}
+function addsubmenu(){
+
+	win.addSubmenu();
+}
