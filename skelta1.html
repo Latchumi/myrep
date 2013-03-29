@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1000" height="1000" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+<script>
+
+
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.font="10px Arial";
+
+ctx.beginPath();
+ctx.moveTo(10,20);
+ctx.lineTo(10,800);
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(10,385);
+ctx.lineTo(900,385);
+ctx.stroke();
+ctx.closePath();
+
+
+//1st circle
+ctx.beginPath();
+ctx.arc(70,40,30,0,2*Math.PI);
+ctx.stroke();
+
+var grd=ctx.createRadialGradient(70,40,5,70,40,40);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#00FF00");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+
+
+//1st Line 
+ctx.beginPath();
+ctx.moveTo(100,40);
+ctx.lineTo(150,40);
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+//1st rectangle
+ctx.beginPath();
+ctx.rect(150,10,100,60);
+ctx.stroke();
+
+var grd=ctx.createRadialGradient(200,35,5,200,35,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+
+//2nd line with arrow
+ctx.beginPath();
+ctx.moveTo(250,40);
+ctx.lineTo(300,40);
+ctx.closePath();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(295,35);
+ctx.lineTo(300,40);
+ctx.lineTo(295,45);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+
+
+
+
+//2nd rectanle
+ctx.beginPath();
+ctx.rect(300,10,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(350,35,5,350,35,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+//3rd Line
+ctx.beginPath();
+ctx.moveTo(400,40);
+ctx.lineTo(450,40);
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+//3rd Rectangle
+ctx.beginPath();
+ctx.rect(450,10,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(500,35,5,500,35,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+
+
+//4th line
+ctx.beginPath();
+ctx.moveTo(550,40);
+ctx.lineTo(600,40);
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+//4th rectangle
+ctx.beginPath();
+ctx.rect(600,10,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(650,35,5,650,35,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+//4th line
+ctx.beginPath();
+ctx.moveTo(700,40);
+ctx.lineTo(770,40);
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+
+
+//5th rectangle
+ctx.beginPath();
+ctx.rect(750,10,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(800,35,5,800,35,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+
+//6th Line with arrow
+ctx.beginPath();
+ctx.moveTo(800,70);
+ctx.lineTo(800,90);
+ctx.lineTo(380,90);
+ctx.lineTo(380,70);
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(375,75);
+ctx.lineTo(380,70);
+ctx.lineTo(385,75);
+ctx.closePath();
+ctx.fillStyle="black";
+ctx.fill();
+
+
+
+//1st polygon
+ctx.beginPath();
+ctx.moveTo(300,150);
+ctx.lineTo(350,120);
+ctx.lineTo(400,150);
+ctx.lineTo(350,180);
+var grd=ctx.createRadialGradient(350,150,5,350,150,40);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+ctx.stroke();
+
+
+//7th line
+ctx.beginPath();
+ctx.moveTo(350,70);
+ctx.lineTo(350,120);
+ctx.stroke();
+ctx.closePath();
+
+//6th rectangle
+ctx.beginPath();
+ctx.rect(450,120,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(500,150,5,500,150,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+//7th rectangle
+ctx.beginPath();
+ctx.rect(600,120,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(650,150,5,650,150,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+
+ctx.beginPath();
+ctx.moveTo(650,180);
+ctx.lineTo(650,200);
+ctx.lineTo(370,200);
+ctx.lineTo(370,232);
+ctx.stroke();
+ctx.closePath();
+
+
+//2nd polygon
+ctx.beginPath();
+ctx.moveTo(300,250);
+ctx.lineTo(350,220);
+ctx.lineTo(400,250);
+ctx.lineTo(350,280);
+var grd=ctx.createRadialGradient(350,250,5,350,250,40);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+ctx.stroke();
+
+
+//8th line
+ctx.beginPath();
+ctx.moveTo(350,180);
+ctx.lineTo(350,220);
+ctx.stroke();
+ctx.closePath();
+
+
+//9th line
+ctx.beginPath();
+ctx.moveTo(350,280);
+ctx.lineTo(350,320);
+ctx.stroke();
+ctx.closePath();
+
+//8th rectangle
+ctx.beginPath();
+ctx.rect(450,220,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(500,250,5,500,250,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#00FF00");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+//10th line with arrow
+ctx.beginPath();
+ctx.moveTo(500,280);
+ctx.lineTo(500,300);
+ctx.lineTo(370,300);
+ctx.lineTo(370,332);
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(365,327);
+ctx.lineTo(370,332);
+ctx.lineTo(375,327);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(365,227);
+ctx.lineTo(370,232);
+ctx.lineTo(375,227);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+
+
+//lines
+ctx.moveTo(400,150);
+ctx.lineTo(450,150);
+ctx.stroke();
+ctx.moveTo(445,145);
+ctx.lineTo(450,150);
+ctx.lineTo(445,155);
+ctx.fillStyle="black";
+ctx.fill();
+
+ctx.moveTo(550,150);
+ctx.lineTo(600,150);
+ctx.stroke();
+ctx.moveTo(595,145);
+ctx.lineTo(600,150);
+ctx.lineTo(595,155);
+ctx.fillStyle="black";
+ctx.fill();
+
+ctx.moveTo(400,250);
+ctx.lineTo(450,250);
+ctx.stroke();
+ctx.moveTo(445,245);
+ctx.lineTo(450,250);
+ctx.lineTo(445,255);
+ctx.fillStyle="black";
+ctx.fill();
+
+ctx.moveTo(550,250);
+ctx.lineTo(600,250);
+ctx.stroke();
+ctx.moveTo(595,245);
+ctx.lineTo(600,250);
+ctx.lineTo(595,255);
+ctx.fillStyle="black";
+ctx.fill();
+
+
+
+
+
+
+//9th rectangle
+ctx.beginPath();
+ctx.rect(600,220,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(650,250,5,650,250,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+//3rd polygon
+ctx.beginPath();
+ctx.moveTo(300,350);
+ctx.lineTo(350,320);
+ctx.lineTo(400,350);
+ctx.lineTo(350,380);
+var grd=ctx.createRadialGradient(350,350,5,350,350,40);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+ctx.stroke();
+
+
+//11th line
+ctx.moveTo(400,350);
+ctx.lineTo(650,350);
+ctx.lineTo(650,450);
+ctx.stroke();
+
+//12th line
+ctx.moveTo(300,350);
+ctx.lineTo(50,350);
+ctx.lineTo(50,800);
+ctx.stroke();
+
+//13th line
+ctx.moveTo(650,480);
+ctx.lineTo(650,800);
+ctx.stroke();
+
+
+ctx.moveTo(330,368);
+ctx.lineTo(330,400);
+ctx.lineTo(200,400);
+ctx.lineTo(200,420);
+ctx.stroke();
+
+
+ctx.moveTo(370,368);
+ctx.lineTo(370,400);
+ctx.lineTo(500,400);
+ctx.lineTo(500,420);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.rect(450,420,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(500,450,5,500,450,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+
+ctx.moveTo(500,480);
+ctx.lineTo(500,500);
+ctx.lineTo(370,500);
+ctx.lineTo(370,520);
+ctx.stroke();
+
+
+ctx.moveTo(200,480);
+ctx.lineTo(200,500);
+ctx.lineTo(330,500);
+ctx.lineTo(330,520);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.rect(600,420,100,60);
+ctx.stroke();var grd=ctx.createRadialGradient(650,450,5,650,450,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.rect(150,420,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(200,450,5,200,450,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.rect(300,520,100,60);
+ctx.stroke();
+var grd=ctx.createRadialGradient(350,550,5,350,550,60);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"#FF6699");
+
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fill();
+ctx.closePath();
+
+ctx.moveTo(350,580);
+ctx.lineTo(350,800);
+ctx.stroke();
+
+
+//1st row arrows
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(145,45);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+ctx.translate(300,0);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(145,45);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+ctx.translate(150,0);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(145,45);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+ctx.translate(150,0);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(145,45);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+//1st row arrows ends here
+
+//more arrows
+ctx.translate(-400,80);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+ctx.translate(0,100);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+ctx.translate(0,100);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+ctx.translate(-150,100);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+ctx.translate(300,0);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+
+ctx.translate(-170,100);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+
+ctx.translate(40,0);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+
+ctx.translate(280,-100);
+ctx.beginPath();
+ctx.moveTo(145,35);
+ctx.lineTo(150,40);
+ctx.lineTo(155,35);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.closePath();
+
+//text
+ctx.translate(-450,-350);
+ctx.font="12px Arial";
+ctx.fillText("order",5,5);
+ctx.fillText("process",0,16);
+ctx.fillText("[start]",5,28);
+
+
+</script>
+
+</body>
+</html>
