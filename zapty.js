@@ -1,3 +1,4 @@
+<!--Added newly-->
 chromeMenu.prototype.createmenu = function() {
 	var menuDiv =document.createElement("div");
 	menuDiv.className="menus";
@@ -17,17 +18,7 @@ chromeMenu.prototype.createmenu = function() {
 	
 
 };
-function create1()
-{
-win.createmenu();
-}
-function add_item(){
-	win.addItem();
-}
-function addsubmenu(){
 
-	win.addSubmenu();
-}
 chromeMenu.prototype.addItem = function() {
 	var id=document.getElementById("menuI");
 	var tr1=document.createElement("tr");
